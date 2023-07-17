@@ -2,11 +2,7 @@ pipeline{
     
     agent {
          
-         label{
-                label "built-in"
-                customWorkspace "/mnt/mavendeploybypipeline"
-         }
-     
+                label "built-in"  
     }
     
     stages{
