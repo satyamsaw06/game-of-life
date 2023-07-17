@@ -4,7 +4,7 @@ pipeline{
          
          label{
                 label "built-in"
-                customWorkspcae "/mnt/mavendeploybypipeline"
+                customWorkspace "/mnt/mavendeploybypipeline"
          }
      
     }
