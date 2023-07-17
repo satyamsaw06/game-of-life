@@ -13,7 +13,7 @@ pipeline{
         stage("MAVENBUILDBYPIPELINE"){
             steps{
                 cleanWs()
-                sh " mvn clean install /mnt/mavendeploybypipeline "
+                sh " mvn clean install "
                 
                 
             }
