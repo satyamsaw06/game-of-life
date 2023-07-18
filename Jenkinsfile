@@ -1,6 +1,3 @@
-/root/.jenkins/workspace/gameoflifewardeploy/gameoflife-web/target/gameoflife.war
-
-
 
 pipeline {
   agent any
