@@ -1,10 +1,5 @@
 pipeline {
-  agent {
-    label{
-      label "built-in"
-      
-    }
-  }
+  agent any
     
   tools {
     maven 'Maven'
