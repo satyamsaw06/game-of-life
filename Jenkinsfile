@@ -1,3 +1,7 @@
+/root/.jenkins/workspace/gameoflifewardeploy/gameoflife-web/target/gameoflife.war
+
+
+
 pipeline {
   agent any
   tools {
@@ -5,9 +9,14 @@ pipeline {
   }
   stages {
     stage('Build') {
-      steps {
+		steps {
         sh 'mvn clean install'
       }
     }
+	stage('Deploy') {
+		steps {
+		sh 'cp -r /root/.jenkins/workspace/gameoflifewardeploy/gameoflife-web/target/gameoflife.war /mnt/servers/apache-tomcat-9.0.78/webapps/'
+		}
+	 }	
   }
 }
