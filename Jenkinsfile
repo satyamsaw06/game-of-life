@@ -1,6 +1,11 @@
 
 pipeline {
-  agent any
+  agent {
+	  label {
+		label 'built-in'
+		customWorkspace '/mnt'
+	  }
+  }
   tools {
     maven 'Maven'
   }
