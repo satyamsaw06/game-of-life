@@ -3,7 +3,7 @@ pipeline {
   agent {
 	  label {
 		label 'built-in'
-		customWorkspace '/mnt'
+		customWorkspace '/mnt/maven/'
 	  }
   }
   tools {
